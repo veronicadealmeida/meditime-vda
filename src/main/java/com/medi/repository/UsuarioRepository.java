@@ -1,7 +1,7 @@
-package com.med.time.repository;
+package com.medi.repository;
 
 
-import com.med.time.model.Usuario;
+import com.medi.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.UUID;

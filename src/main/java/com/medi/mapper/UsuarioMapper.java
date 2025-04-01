@@ -1,8 +1,7 @@
-package com.med.time.mapper;
+package com.medi.mapper;
 
-import com.med.time.model.Medicamento;
-import com.med.time.model.Usuario;
-import com.med.time.repository.dto.UsuarioDTO;
+import com.medi.model.Usuario;
+import com.medi.time.repository.dto.UsuarioDTO;
 import org.springframework.stereotype.Component;
 
 @Component

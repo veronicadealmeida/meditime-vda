@@ -1,7 +1,7 @@
-package com.med.time.mapper;
+package com.medi.mapper;
 
-import com.med.time.model.Medicamento;
-import com.med.time.repository.dto.MedicamentoDTO;
+import com.medi.model.Medicamento;
+import com.medi.time.repository.dto.MedicamentoDTO;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;

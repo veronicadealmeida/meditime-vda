@@ -1,10 +1,9 @@
-package com.med.time.controller;
+package com.medi.controller;
 
 
-import com.med.time.model.Usuario;
-import com.med.time.repository.UsuarioRepository;
-import com.med.time.repository.dto.UsuarioDTO;
-import com.med.time.service.UsuarioService;
+import com.medi.model.Usuario;
+import com.medi.repository.UsuarioRepository;
+import com.medi.service.UsuarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,7 +27,7 @@ public class UsuarioController {
 
     @PostMapping
     @ResponseStatus( code = HttpStatus.CREATED)
-    public UsuarioDTO create(@RequestBody UsuarioDTO usuario) {
+    public com.medi.time.repository.dto.UsuarioDTO create(@RequestBody com.medi.time.repository.dto.UsuarioDTO usuario) {
 
         return usuarioService.create(usuario);
     }

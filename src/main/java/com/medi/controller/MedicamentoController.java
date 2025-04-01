@@ -1,11 +1,9 @@
-package com.med.time.controller;
+package com.medi.controller;
 
-import com.med.time.model.Medicamento;
-import com.med.time.model.Usuario;
-import com.med.time.repository.MedicamentoRepository;
-import com.med.time.repository.UsuarioRepository;
-import com.med.time.repository.dto.MedicamentoDTO;
-import com.med.time.service.MedicamentoService;
+import com.medi.model.Medicamento;
+import com.medi.repository.MedicamentoRepository;
+import com.medi.repository.UsuarioRepository;
+import com.medi.service.MedicamentoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,7 +32,7 @@ public class MedicamentoController {
 
     @PostMapping
     @ResponseStatus( code = HttpStatus.CREATED)
-    public MedicamentoDTO adicionar(@RequestBody MedicamentoDTO medicamento) {
+    public com.medi.time.repository.dto.MedicamentoDTO adicionar(@RequestBody com.medi.time.repository.dto.MedicamentoDTO medicamento) {
         return medicamentoService.create(medicamento);
     }
 

@@ -1,11 +1,11 @@
-package com.med.time.mapper;
+package com.medi.mapper;
 
-import com.med.time.model.Horario;
-import com.med.time.model.Medicamento;
-import com.med.time.model.Usuario;
-import com.med.time.repository.dto.HorarioDTO;
-import com.med.time.repository.MedicamentoRepository;
-import com.med.time.repository.UsuarioRepository;
+import com.medi.model.Horario;
+import com.medi.model.Medicamento;
+import com.medi.model.Usuario;
+import com.medi.repository.MedicamentoRepository;
+import com.medi.repository.UsuarioRepository;
+import com.medi.repository.dto.HorarioDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

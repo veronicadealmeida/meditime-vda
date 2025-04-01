@@ -1,4 +1,4 @@
-package com.med.time.model;
+package com.medi.model;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,4 +1,4 @@
-package com.med.time.repository.dto;
+package com.medi.time.repository.dto;
 
 import java.math.BigInteger;
 import java.util.UUID;

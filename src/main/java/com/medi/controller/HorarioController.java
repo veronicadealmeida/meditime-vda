@@ -1,9 +1,8 @@
-package com.med.time.controller;
+package com.medi.controller;
 
-import com.med.time.model.Horario;
-import com.med.time.model.Usuario;
-import com.med.time.repository.dto.HorarioDTO;
-import com.med.time.service.HorarioService;
+import com.medi.model.Horario;
+import com.medi.repository.dto.HorarioDTO;
+import com.medi.service.HorarioService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

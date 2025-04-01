@@ -1,4 +1,4 @@
-package com.med.time.model;
+package com.medi.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -25,4 +25,6 @@ public class Usuario {
     private String nome;
     @Getter
     private String telefone;
+    @Getter
+    private String messageKey;
 }

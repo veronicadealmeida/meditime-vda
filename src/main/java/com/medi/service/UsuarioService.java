@@ -1,9 +1,8 @@
-package com.med.time.service;
+package com.medi.service;
 
-import com.med.time.mapper.UsuarioMapper;
-import com.med.time.model.Usuario;
-import com.med.time.repository.UsuarioRepository;
-import com.med.time.repository.dto.UsuarioDTO;
+import com.medi.mapper.UsuarioMapper;
+import com.medi.model.Usuario;
+import com.medi.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +18,7 @@ public class UsuarioService {
     @Autowired
     private UsuarioMapper usuarioMapper;
 
-    public UsuarioDTO create(UsuarioDTO usuario)  {
+    public com.medi.time.repository.dto.UsuarioDTO create(com.medi.time.repository.dto.UsuarioDTO usuario) {
         return usuarioMapper.usuarioToDTO(usuarioRepository.save(usuarioMapper.toEntity(usuario)));
     }
 
@@ -27,11 +26,11 @@ public class UsuarioService {
         return usuarioRepository.findAll();
     }
 
-    public Optional<Usuario> buscarUsuarioPorId (Long id) {
+    public Optional<Usuario> buscarUsuarioPorId(Long id) {
         return usuarioRepository.findById(id);
     }
 
-    public void removerUsuario( Long id) {
+    public void removerUsuario(Long id) {
         usuarioRepository.deleteById(id);
     }
 }

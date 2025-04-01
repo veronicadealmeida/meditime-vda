@@ -1,7 +1,7 @@
-package com.med.time.repository.dto;
+package com.medi.repository.dto;
 
-import com.med.time.model.Medicamento;
-import com.med.time.model.Usuario;
+import com.medi.model.Medicamento;
+import com.medi.model.Usuario;
 import org.springframework.stereotype.Component;
 
 import java.math.BigInteger;
